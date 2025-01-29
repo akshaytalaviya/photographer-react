@@ -1,4 +1,5 @@
 import React from 'react';
+import Hero from "../assets/img/hero-author.png";
 
 const Home = () => {
   return (
@@ -57,7 +58,7 @@ const Home = () => {
         <div className="w-full md:w-1/2 p-4 flex justify-center">
           <div className="hero-img w-full md:w-[600px] relative">
             <img
-              src="http://127.0.0.1:5500/anushka/assets/img/hero-author.png"
+              src={Hero}
               alt="profile-picture"
               className="w-full h-auto object-cover"
             />

@@ -1,4 +1,5 @@
 import React from "react";
+import Profile from "../assets/img/profile-pic.png";
 
 const About = () => {
   return (
@@ -9,7 +10,7 @@ const About = () => {
           <div className="lg:w-1/2 w-full mb-8 lg:mb-0">
             <div className="about_img">
               <img 
-                src="http://127.0.0.1:5500/anushka/assets/img/profile-pic.png"
+                src={Profile}
                 alt="profile"
                 className="w-full rounded-lg "
               />

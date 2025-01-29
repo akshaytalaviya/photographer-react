@@ -7,7 +7,7 @@ const Portfolio = () => {
     {
       id: 1,
       category: ["print", "marketing"],
-      img: "http://127.0.0.1:5500/anushka/assets/img/portfolio/1.jpg",
+      img: require("../assets/img/portfolio/1.jpg"),
       title: "Digital Marketing",
       description: "Agency work",
       modalId: "projectModal1",
@@ -15,7 +15,7 @@ const Portfolio = () => {
     {
       id: 2,
       category: ["web", "media"],
-      img: "http://127.0.0.1:5500/anushka/assets/img/portfolio/2.jpg",
+      img: require("../assets/img/portfolio/2.jpg"),
       title: "Website Design",
       description: "Design",
       modalId: "projectModal2",
@@ -23,7 +23,7 @@ const Portfolio = () => {
     {
       id: 3,
       category: ["video", "logo"],
-      img: "http://127.0.0.1:5500/anushka/assets/img/portfolio/3.jpg",
+      img: require("../assets/img/portfolio/3.jpg"),
       title: "UI/UX Design",
       description: "Company work",
       modalId: "projectModal3",
@@ -31,7 +31,7 @@ const Portfolio = () => {
     {
       id: 4,
       category: ["web", "design"],
-      img: "http://127.0.0.1:5500/anushka/assets/img/portfolio/4.jpg",
+      img: require("../assets/img/portfolio/4.jpg"),
       title: "WordPress Project",
       description: "Client work",
       modalId: "projectModal4",
@@ -39,7 +39,7 @@ const Portfolio = () => {
     {
       id: 5,
       category: ["marketing", "logo"],
-      img: "http://127.0.0.1:5500/anushka/assets/img/portfolio/5.jpg",
+      img: require("../assets/img/portfolio/5.jpg"),
       title: "Product Branding",
       description: "Branding",
       modalId: "projectModal5",
@@ -47,7 +47,7 @@ const Portfolio = () => {
     {
       id: 6,
       category: ["marketing", "logo"],
-      img: "http://127.0.0.1:5500/anushka/assets/img/portfolio/6.jpg",
+      img: require("../assets/img/portfolio/6.jpg"),
       title: "Logo Design",
       description: "Image",
       modalId: "projectModal6",
@@ -68,16 +68,8 @@ const Portfolio = () => {
 
         <div className="flex justify-center mb-8">
           <ul className="flex flex-wrap bg-white rounded shadow-lg gap-1">
-            {[
-              "all",
-              "design",
-              "print",
-              "logo",
-              "marketing",
-              "media",
-              "web",
-              "video",
-            ].map((filter) => (
+            {["all", "design", "print", "logo", "marketing", "media", "web", "video"].map((filter) => (
+
               <li
                 key={filter}
                 className={`cursor-pointer px-6 py-3 text-lg sm:text-xl font-medium border-r last:border-r-0 rounded-l-lg ${

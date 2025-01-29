@@ -3,5 +3,7 @@
 @tailwind utilities;
 
 @import '@fortawesome/fontawesome-free/css/all.min.css';
+@import 'http://127.0.0.1:5500/anushka/index.html';
+
 
 

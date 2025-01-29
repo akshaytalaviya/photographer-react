@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import Bloga from "../assets/img/blog/blog-a.jpg";
+import Blogb from "../assets/img/blog/blog-b.jpg";
 
 const BlogSection = () => {
   const [activeModal, setActiveModal] = useState(null);
@@ -32,7 +34,7 @@ const BlogSection = () => {
             <div className="single-blog bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="blog-img">
                 <img
-                  src="http://127.0.0.1:5500/anushka/assets/img/blog/1.jpg"
+                  src={Bloga}
                   alt="Blog 1"
                   className="w-full h-auto object-cover"
                 />
@@ -56,7 +58,7 @@ const BlogSection = () => {
             <div className="single-blog bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="blog-img">
                 <img
-                  src="http://127.0.0.1:5500/anushka/assets/img/blog/2.jpg"
+                  src={Blogb}
                   alt="Blog 2"
                   className="w-full h-auto object-cover"
                 />

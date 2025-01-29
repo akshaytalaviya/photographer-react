@@ -1,4 +1,5 @@
 import React from "react";
+import Contact from "../assets/img/contact.png";
 
 // Footer Component
 const Footer = () => (
@@ -51,7 +52,7 @@ const ContactSection = () => {
             {/* Image */}
             <div className="w-full lg:w-5/12 px-4 mb-8 lg:mb-0">
               <img
-                src="http://127.0.0.1:5500/anushka/assets/img/contact.png"
+                src={Contact}
                 alt="Contact"
                 className="w-full h-auto rounded-lg"
               />

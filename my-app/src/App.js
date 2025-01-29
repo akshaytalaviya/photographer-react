@@ -10,7 +10,7 @@ import Testimonials from "./components/Testimonials";
 import BlogSection from "./components/BlogSection"; // Importing the Blog section
 import ContactSection from './components/ContactSection';
 
-
+  
 
 function App() {
   return (
@@ -34,7 +34,6 @@ function App() {
         <ContactSection />
 
       </main>
-      
     </div>
   );
 }

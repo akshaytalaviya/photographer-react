@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Testi from "../assets/img/testi.png";
 
 const testimonials = [
   {
@@ -41,7 +42,7 @@ const Testimonials = () => {
           {/* Image Section */}
           <div className="lg:w-1/2 mb-8 lg:mb-0">
             <img
-              src="http://127.0.0.1:5500/anushka/assets/img/testi.png"
+              src={Testi}
               alt="Client Testimonials"
               className="rounded-lg"
               width={500}
